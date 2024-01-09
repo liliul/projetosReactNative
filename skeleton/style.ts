@@ -6,4 +6,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#212121',
         padding: 32,
     },
+    txt1: {
+        color: 'white',
+    }
 });

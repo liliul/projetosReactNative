@@ -6,7 +6,7 @@ import { styles } from './style';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text style={styles.txt1}>Testando Skeleton no react navite</Text>
       <StatusBar style="auto" />
     </View>
   );
