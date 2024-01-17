@@ -7,7 +7,7 @@ export default function ModalScreen() {
   return (
     <View className={styles.container}>
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
-      <Text className={styles.title}>Modal</Text>
+      <Text className={styles.title}>Modal ReactNative</Text>
       <View className={styles.separator} />
       <EditScreenInfo path="app/modal.tsx" />
     </View>

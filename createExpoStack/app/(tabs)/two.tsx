@@ -5,7 +5,7 @@ import EditScreenInfo from '../../components/edit-screen-info';
 export default function TabTwoScreen() {
   return (
     <View className={styles.container}>
-      <Text className={styles.title}>Tab Two</Text>
+      <Text className={styles.title}>Tab Two ReactNative</Text>
       <View className={styles.separator} />
       <EditScreenInfo path="app/(tabs)/index.tsx" />
     </View>
