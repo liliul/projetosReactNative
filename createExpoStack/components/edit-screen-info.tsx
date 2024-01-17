@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
@@ -11,6 +11,7 @@ export default function EditScreenInfo({ path }: { path: string }) {
         </View>
         <Text className={styles.getStartedText}>
           Testando create expo stack no react native
+            <Image  source={{uri: "https://github.com/liliul.png"}} />
         </Text>
       </View>
     </View>
@@ -20,7 +21,7 @@ export default function EditScreenInfo({ path }: { path: string }) {
 const styles = {
   codeHighlightContainer: `rounded-md px-1`,
   getStartedContainer: `items-center mx-12`,
-  getStartedText: `text-lg leading-6 text-center text-orange-600`,
+  getStartedText: `text-lg leading-6 text-center text-[#a4ff] h-full w-full`,
   helpContainer: `items-center mx-5 mt-4`,
   helpLink: `py-4`,
   helpLinkText: `text-center`,
