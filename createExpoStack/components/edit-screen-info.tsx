@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 
+import githubApi from './githubApi'
+
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
     <View>
@@ -12,6 +14,7 @@ export default function EditScreenInfo({ path }: { path: string }) {
         <Text className={styles.getStartedText}>
           Testando create expo stack no react native
             <Image  source={{uri: "https://github.com/liliul.png"}} />
+            <githubApi name='Naruto Uzumaki E Sasuke Uchiha' />
         </Text>
       </View>
     </View>
