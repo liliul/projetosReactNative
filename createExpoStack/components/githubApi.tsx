@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {View ,Text} from 'react-native'
+import {View ,Text, StyleSheet} from 'react-native'
 
 export default function githubInfos(props) {
     const [github, setGithub] = useState('')
@@ -14,8 +14,8 @@ export default function githubInfos(props) {
 
     return (
         <View>
-            <Text className={styles.name}>{props.name}</Text>
-            <View>
+            <Text style={styles.nameProps}>{props.name}</Text>
+            <View style={styles.gitContainer}>
                 <Text>ID: {github.id}</Text>
                 <Text>Name: {github.name}</Text>
                 <Text>Company: {github.company}</Text>
@@ -25,6 +25,14 @@ export default function githubInfos(props) {
     )
 }
 
-const styles = {
-    name: `text-grey-500 `
-}
+const styles = StyleSheet.create({
+    nameProps: {
+        color: "purple",
+        fontSize: 23,
+    },
+    gitContainer: {
+        marginTop: 10,
+        paddingLeft: 5,
+    }
+
+})

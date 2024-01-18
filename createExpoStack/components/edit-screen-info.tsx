@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, StyleSheet } from 'react-native';
 
 import GithubApi from './githubApi'
 
@@ -11,7 +11,7 @@ export default function EditScreenInfo({ path }: { path: string }) {
         <View className={styles.codeHighlightContainer + styles.homeScreenFilename}>
           <Text>{path}</Text>
         </View>
-        <View className={styles.git}>
+        <View style={estilo.git}>
            <GithubApi name='Informações do usuario do github' />
         </View>
 
@@ -32,5 +32,11 @@ const styles = {
   helpLink: `py-4`,
   helpLinkText: `text-center`,
   homeScreenFilename: `my-2`,
-  git: `mt-4 `,
 };
+const estilo = StyleSheet.create({
+  git: {
+    paddingTop: 15,
+    paddingLeft: 10,
+    paddingBottom: 20,
+  }
+})
