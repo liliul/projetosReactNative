@@ -11,8 +11,8 @@ export default function EditScreenInfo({ path }: { path: string }) {
         <View className={styles.codeHighlightContainer + styles.homeScreenFilename}>
           <Text>{path}</Text>
         </View>
-        <View>
-           <GithubApi name='Naruto Uzumaki E Sasuke Uchiha' />
+        <View className={styles.git}>
+           <GithubApi name='Informações do usuario do github' />
         </View>
 
         <Text className={styles.getStartedText}>
@@ -32,4 +32,5 @@ const styles = {
   helpLink: `py-4`,
   helpLinkText: `text-center`,
   homeScreenFilename: `my-2`,
+  git: `mt-4 `,
 };
