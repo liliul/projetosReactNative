@@ -13,7 +13,7 @@ export default function githubInfos(props) {
     },[])
 
     return (
-        <View>
+        <View style={styles.containerCard}>
             <Text style={styles.nameProps}>{props.name}</Text>
             <View style={styles.gitContainer}>
                 <Text>ID: {github.id}</Text>
@@ -32,6 +32,13 @@ export default function githubInfos(props) {
 }
 
 const styles = StyleSheet.create({
+    containerCard: {
+        shadowColor: '#171717',
+        shadowOffset: {width: -2, height: 4},
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+        padding: 10,
+    },
     nameProps: {
         color: "purple",
         fontSize: 23,
