@@ -21,6 +21,12 @@ export default function githubInfos(props) {
                 <Text>Company: {github.company}</Text>
                 <Text>Location: {github.location}</Text>
             </View>
+
+            <View style={styles.gitContainer}>
+                <Text>URL: {github.html_url}</Text>
+                <Text>Repos URL: {github.repos_url}</Text>
+                <Text>Bio: {github.bio}</Text>
+            </View>
         </View>
     )
 }
