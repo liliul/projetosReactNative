@@ -17,8 +17,13 @@ export default function EditScreenInfo({ path }: { path: string }) {
 
         <Text className={styles.getStartedText}>
           Testando create expo stack no react native
-            <Image  source={{uri: "https://github.com/liliul.png"}} />
         </Text>
+        <View>
+          <Image
+            style={estilo.avatar} 
+            source={{uri: "https://github.com/liliul.png"}} 
+          />
+        </View>
       </View>
     </View>
   );
@@ -38,5 +43,10 @@ const estilo = StyleSheet.create({
     paddingTop: 15,
     paddingLeft: 10,
     paddingBottom: 20,
-  }
+  },
+  avatar: {
+    width: 94,
+    height: 94,
+    marginTop: 10,  
+  },
 })
