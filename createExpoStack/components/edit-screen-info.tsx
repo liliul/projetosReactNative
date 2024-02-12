@@ -5,7 +5,7 @@ import GithubApi from './githubApi'
 
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
-    <View>
+    <View style={estilo.container}>
       <View className={styles.getStartedContainer}>
         <Text className={styles.getStartedText}>Inicio do Projeto</Text>
         <View className={styles.codeHighlightContainer + styles.homeScreenFilename}>
@@ -32,13 +32,17 @@ export default function EditScreenInfo({ path }: { path: string }) {
 const styles = {
   codeHighlightContainer: `rounded-md px-1`,
   getStartedContainer: `items-center mx-12`,
-  getStartedText: `text-lg leading-6 text-center text-[#a4ff] h-full w-full`,
+  getStartedText: `text-lg leading-6 text-center text-[#a4ff]`,
   helpContainer: `items-center mx-5 mt-4`,
   helpLink: `py-4`,
   helpLinkText: `text-center`,
   homeScreenFilename: `my-2`,
 };
 const estilo = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 22,
+  },
   git: {
     paddingTop: 15,
     paddingLeft: 10,
